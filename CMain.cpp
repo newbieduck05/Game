@@ -92,7 +92,7 @@ char asciiArt3[7][111] = {
 	"##     ##   ## ##   ##     ## ##   ##  ##     ## ##     ## ##     ##    ##    ##    ## ##   ###   ### ##",
 	"##     ##  ##   ##  ##     ## ##  ##   ##     ## ##     ## ##     ##    ##         ##   ##  #### #### ##",
 	"########  ##     ## ########  #####    ##     ## ##     ## ########     ##   #### ##     ## ## ### ## ######",
-	"##        ######### ##   ##   ##  ##   ##     ## ##     ## ##   ##      ##    ##  ######### ##     ## ##",	
+	"##        ######### ##   ##   ##  ##   ##     ## ##     ## ##   ##      ##    ##  ######### ##     ## ##",
 	"##        ##     ## ##    ##  ##   ##  ##     ## ##     ## ##    ##     ##    ##  ##     ## ##     ## ##",
 	"##        ##     ## ##     ## ##    ##  #######   #######  ##     ##     ######   ##     ## ##     ## ########",
 };
@@ -128,9 +128,9 @@ char asciiArt6[7][34] = {
 	" ##### ##  #######  ####    ##",
 };
 
-char asciiArt[][] = {
+char asciiArt7[7][73] = {
 	"#####  #####  ######  ####   ####     ###### #    # ##### ###### #####",
-	"#    # #    # #      #      #         #      ##   #   #   #      #    #", 
+	"#    # #    # #      #      #         #      ##   #   #   #      #    #",
 	"#    # #    # #####   ####   ####     #####  # #  #   #   #####  #    #",
 	"#####  #####  #           #      #    #      #  # #   #   #      #####",
 	"#      #   #  #      #    # #    #    #      #   ##   #   #      #   #",
@@ -179,10 +179,11 @@ typedef struct Obj
 	Color color;
 	const char* shape[3];
 
-}*Player;
+}*Player , *MenuControler;
 #pragma endregion
 
 Player player = nullptr;
+MenuControler menucontroler = nullptr;
 
 Scene currentScene;
 void Play();
@@ -309,7 +310,11 @@ void LogoRelease()
 #pragma region Menu
 void Menuinitalize()
 {
-
+	menucontroler = (Obj*)malloc(sizeof(Obj));
+	menucontroler->x = 6;
+	menucontroler->y = 55;
+	menucontroler->color = WHITE;
+	menucontroler->shape[0] = "▶";
 }
 void MenuProgress()
 {
@@ -320,7 +325,12 @@ void MenuProgress()
 
 	if (GetAsyncKeyState(VK_UP))
 	{
-
+		int i;
+		while (i<7)
+		{
+			menucontroler->y++;
+			i++;
+		}
 	}
 	if (GetAsyncKeyState(VK_DOWN))
 	{
@@ -349,6 +359,13 @@ void MenuRender()
 		ChangeColor(WHITE);
 		printf(asciiArt6[i]);
 	}
+
+	for (int i = 0; i < 7; i++)
+	{
+		MoveXY(33, 49 + i);
+		ChangeColor(WHITE);
+		printf(asciiArt7[i]);
+	}
 }
 void MenuRelease()
 {
@@ -363,9 +380,9 @@ void StageInitialize()
 	player->x = 6;
 	player->y = 55;
 	player->color = WHITE;
-	player->shape[0] = " ■ ";
+	player->shape[0] = "  ■  ";
 	player->shape[1] = "■■■";
-	player->shape[2] = "■ ■";
+	player->shape[2] = " ■■ ";
 }
 
 void StageProgress()
@@ -374,7 +391,7 @@ void StageProgress()
 	{
 		SetScene(LOGO);
 	}
-	
+
 	if (GetAsyncKeyState(VK_LEFT))
 	{
 		player->x--;
@@ -402,7 +419,7 @@ void StageRender()
 {
 	for (int y = 0; y < MAP_HEIGHT; y++)
 	{
-		for  (int x = 0; x < MAP_WIDTH; x++)
+		for (int x = 0; x < MAP_WIDTH; x++)
 		{
 			switch (map[y][x])
 			{
@@ -429,7 +446,7 @@ void StageRender()
 	MoveXY(player->x, player->y);
 	ChangeColor(player->color);
 	printf(player->shape[3]);
-	
+
 }
 void StageRelease()
 {
