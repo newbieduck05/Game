@@ -5,8 +5,8 @@
 #define MAP_WIDTH 118
 #define MAP_HEIGHT 63
 
-#define BufferWidth 80
-#define BufferHeight 40
+#define BufferWidth 237
+#define BufferHeight 80
 #pragma endregion
 
 #pragma region Map
@@ -62,11 +62,11 @@ int map[MAP_HEIGHT][MAP_WIDTH] = {
     {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
     {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
     {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
-    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
-    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
-    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,0,0,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
-    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,0,0,0,0,3,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
-    {0,0,0,0,2,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0,0,3,4,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,2,0,0,0,0},
+    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
+    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
+    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
+    {0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0},
+    {0,0,0,0,2,0,8,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,2,0,0,0,0},
     {0,0,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0},
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -111,13 +111,16 @@ char title[32][144] = {
     "                                GGGGGG   GGGGAAAAAAA                   AAAAAAAMMMMMMMM               MMMMMMMMEEEEEEEEEEEEEEEEEEEEEE",
 };
 
-char clear[6][237] = {
-" ██████╗  █████╗ ███╗   ███╗███████╗     ██████╗██╗     ███████╗ █████╗ ██████╗ ██╗██╗",
-"██╔════╝ ██╔══██╗████╗ ████║██╔════╝    ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██║██║",
-"██║  ███╗███████║██╔████╔██║█████╗      ██║     ██║     █████╗  ███████║██████╔╝██║██║",
-"██║   ██║██╔══██║██║╚██╔╝██║██╔══╝      ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗╚═╝╚═╝",
-"╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ╚██████╗███████╗███████╗██║  ██║██║  ██║██╗██╗",
-" ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝     ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝",
+char clear[9][237] = {
+"________/#########__/###______________/###############_____/#########_______/#########_________/###________/###____",
+" _____/###////////__#/###_____________#/###///////////____/#############___/###///////###_____/#######____/#######__",      
+"  ___/###/___________#/###_____________#/###______________/###/////////###_#/###_____#/###____/#########__/#########_",      
+"   __/###_____________#/###_____________#/###########_____#/###_______#/###_#/###########/____#//#######__#//#######__",     
+"    _#/###_____________#/###_____________#/###///////______#/###############_#/###//////###_____#//#####____#//#####___",    
+"     _#//###____________#/###_____________#/###_____________#/###/////////###_#/###____#//###_____#//###______#//###____",
+"      __#///###__________#/###_____________#/###_____________#/###_______#/###_#/###_____#//###_____#///________#///_____",
+"       ____#////#########_#/###############_#/###############_#/###_______#/###_#/###______#//###_____/###________/###____",
+"        _______#/////////__#///////////////__#///////////////__#///________#///__#///________#///_____#///________#///_____",
 };
 #pragma endregion
 
@@ -210,8 +213,9 @@ void MenuRender();
 void MenuRelease();
 
 //Save
-SaveFile currentSAVE;
+SaveFile currentFILE;
 Obj* savefile[3];
+Obj* savecontroler;
 void SaveFileSet(int filenumber);
 void SaveInitialize();
 void SaveProgress();
@@ -271,6 +275,10 @@ void Play()
         MenuProgress();
         MenuRender();
         break;
+    case SAVE:
+        SaveProgress();
+        SaveRender();
+        break;
     case STAGE:
         StageProgress();
         StageRender();
@@ -293,6 +301,9 @@ void SetScene(Scene newScene)
     case MENU:
         Menuinitalize();
         break;
+    case SAVE:
+        SaveInitialize();
+        break;
     case STAGE:
         StageInitialize();
         break;
@@ -306,6 +317,7 @@ void Release()
 {
     LogoRelease();
     MenuRelease();
+    SaveRelease();
     StageRelease();
     ClearRelease();
 }
@@ -318,13 +330,13 @@ void LogoInitialize()
     press->x = 53;
     press->y = 57;
     press->color = WHITE;
-    press->shape = "Press ENTER to Start";
+    press->shape = "Press X to Start";
 }
 
 
 void LogoProgress()
 {
-    if (GetAsyncKeyState(VK_RETURN))
+    if (GetAsyncKeyState(0x58))
     {
         SetScene(MENU);
     }
@@ -391,7 +403,6 @@ void MenuProgress()
             SetScene(SAVE);
             break;
         case EXIT:
-            SetScene(LOGO);
             break;
         default:
             break;
@@ -430,7 +441,7 @@ void MenuRender()
     WriteBuffer(menucontroler->x, menucontroler->y, menucontroler->shape, menucontroler->color);
 }
 void MenuRelease()
-{;
+{
     free(menucontroler);
     menucontroler = nullptr;
 }
@@ -439,11 +450,12 @@ void MenuRelease()
 #pragma region SaveMenu
 void SaveFileSet(int filenumber)
 {
-    int saveindex = currentMENU;
+    int saveindex = currentFILE;
     savefile[saveindex]->color = WHITE;
     saveindex += filenumber;
-    currentMENU = (Menu)saveindex;
-    menu[saveindex]->color = YELLOW;
+    currentFILE = (SaveFile)saveindex;
+    savefile[saveindex]->color = YELLOW;
+
 }
 void SaveInitialize()
 {
@@ -458,13 +470,20 @@ void SaveInitialize()
     savefile[1]->shape = "[ S E C O N D F I L E ]";
     savefile[2]->shape = " [ T H I R D F I L E ] ";
 
-    currentSAVE = FILE1;
+    currentFILE = FILE1;
+    savecontroler = (Obj*)malloc(sizeof(Obj));
+    savecontroler->x = 50;
+    savecontroler->y = 55;
+    savecontroler->color = WHITE;
+    savecontroler->shape = "▶";
+
+    SaveFileSet(0);
 }
 void SaveProgress()
 {
     if (GetAsyncKeyState(VK_RETURN))
     {
-        switch (currentSAVE)
+        switch (currentFILE)
         {
         case FILE1:
             break;
@@ -478,28 +497,38 @@ void SaveProgress()
     }
     if (GetAsyncKeyState(VK_UP))
     {
-
+        if (savecontroler->y > savefile[0]->y)
+        {
+            savecontroler->y -= 2;
+            SaveFileSet(-1);
+        }
     }
     if (GetAsyncKeyState(VK_DOWN))
     {
-
-    }
-    if (GetAsyncKeyState(VK_LEFT))
-    {
-
-    }
-    if (GetAsyncKeyState(VK_RIGHT))
-    {
-
+        if (savecontroler->y < savefile[2]->y)
+        {
+            savecontroler->y += 2;
+            SaveFileSet(1);
+        }
     }
 }
 void SaveRender()
 {
+    for (int i = 0; i < 32; i++)
+    {
+        WriteBuffer(23, 15 + i, title[i], WHITE);
+    }
 
+    for (int i = 0; i < 3; i++)
+    {
+        WriteBuffer(savefile[i]->x, savefile[i]->y, savefile[i]->shape, savefile[i]->color);
+    } 
+
+    WriteBuffer(savecontroler->x, savecontroler->y, savecontroler->shape, savecontroler->color);
 }
 void SaveRelease()
 {
-
+    free(savecontroler);
 }
 #pragma endregion
 
@@ -510,21 +539,34 @@ void StageInitialize()
     player = (Obj*)malloc(sizeof(Obj));
     player->x = 6;
     player->y = 55;
-    player->color = WHITE;
+    player->color = YELLOW;
     player->shape = "■";
     player->hp = 5;
 }
 
 void StageProgress()
 {
-    if (GetAsyncKeyState(VK_RETURN))
+    if (map[player->y - 1][player->x] == 0)
     {
-        SetScene(LOGO);
+        player->y++;
+        if (map[player->y][player->x] == 1)
+        {
+            player->y--;
+        }
+        if (map[player->y][player->x] == 3)
+        {
+            player->y--;
+        }
     }
 
     if (GetAsyncKeyState(0x41))
     {
         player->x--;
+        Sleep(30);
+        if (map[player->y + 1][player->x] == 0)
+        {
+            player->y++;
+        }
         if (map[player->y][player->x] == 2)
         {
             player->x++;
@@ -548,6 +590,7 @@ void StageProgress()
     if (GetAsyncKeyState(0x44))
     {
         player->x++;
+        Sleep(30);
         if (map[player->y][player->x] == 2)
         {
             player->x--;
@@ -572,20 +615,40 @@ void StageProgress()
         }
     }
 
-    if (GetAsyncKeyState(VK_SPACE))
+    if (GetAsyncKeyState(VK_SPACE) && !jump)
     {
-        WriteBuffer(0, 0, "Jump", player->color);
         h = 0;
         time = 0;
         playerY = player->y;
         jump = true;
+
     }
 
     if (jump)
     {
+
+        if (map[player->y][player->x] == 7)
+        {
+            SetScene(CLEAR);
+        }
+
         time += 0.1f;
         h = -Vo * time + (0.5f * G * time * time);
         player->y = playerY + h;
+
+        while (map[player->y][player->x] == 3)
+
+        {
+            jump = false;
+            player->y--;
+        }
+
+        while (map[player->y - 1][player->x] == 3)
+
+        {
+            jump = false;
+            player->y++;
+        }
 
         if (player->y >= playerY)
         {
@@ -593,8 +656,7 @@ void StageProgress()
             jump = false;
         }
     }
-
-}
+} 
 void StageRender()
 {
     for (int y = 0; y < MAP_HEIGHT; y++)
@@ -644,16 +706,13 @@ void ClearInitialize()
 }
 void ClearProgress()
 {
-    if (GetAsyncKeyState(VK_RETURN))
-    {
-        SetScene(CLEAR);
-    }
+    
 }
 void ClearRender()
 {
-    for  (int i = 0; i < 6; i++)
+    for (int i = 0; i < 9; i++)
     {
-        WriteBuffer(23, 15 + i, clear[i], WHITE);
+        WriteBuffer(23, 24 + i, clear[i], WHITE);
     }
 }
 void ClearRelease()
@@ -669,7 +728,7 @@ void InitBuffer()
 
     COORD size = { BufferWidth, BufferHeight };
 
-    SMALL_RECT rect = { 0,0, BufferWidth, BufferHeight};
+    SMALL_RECT rect = { 0,0, BufferWidth, BufferHeight };
 
     hBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 
