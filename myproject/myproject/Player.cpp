@@ -21,14 +21,31 @@ void Player::Progress()
 		x++;
 	}
 	
-	if (GetAsyncKeyState(VK_SPACE))
-	{
-		
-	}
+    if (GetAsyncKeyState(VK_SPACE) && !jump)
+    {
+        h = 0;
+        time = 0;
+        playerY = y;
+        jump = true;
+    }
+
+    if (jump)
+    {
+        time += 0.1f;
+        h = -Vo * time + (0.5f * G * time * time);
+        y = playerY + h;
+
+        if (y >= playerY)
+        {
+            y = playerY;
+            jump = false;
+        }
+    }
 }
 
 void Player::Render()
 {
+    DoubleBuffer::Instance()->WriteBuffer(x, y, shape, color);
 }
 
 void Player::Release()

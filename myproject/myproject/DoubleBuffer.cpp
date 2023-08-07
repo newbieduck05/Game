@@ -6,8 +6,7 @@ void DoubleBuffer::InitBuffer()
     COORD size = { BufferWidth, BufferHeight };
 
     SMALL_RECT rect = { 0,0, BufferWidth, BufferHeight };
-    SMALL_RECT rect = { 0,0, BufferWidth, BufferHeight };
-
+    
     hBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 
     SetConsoleScreenBufferSize(hBuffer[0], size);

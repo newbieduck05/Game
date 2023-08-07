@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\02_Obj\00_Player">
       <UniqueIdentifier>{a654affb-807b-4e40-9183-72cf5dc6c938}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\02_Obj\01_Map">
+      <UniqueIdentifier>{fde4b3b6-b9f7-408b-b7be-856123f2a812}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMain.cpp">
@@ -74,6 +77,9 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일\02_Obj\00_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>소스 파일\02_Obj\01_Map</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>소스 파일\02_Obj\00_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>소스 파일\02_Obj\01_Map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

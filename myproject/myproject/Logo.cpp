@@ -17,7 +17,7 @@ void Logo::Progress()
 
 void Logo::Render()
 {
-	
+	DoubleBuffer::Instance()->WriteBuffer(10, 10, "LOGO", WHITE);
 }
 
 void Logo::Release()
